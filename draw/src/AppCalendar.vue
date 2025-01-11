@@ -7,7 +7,6 @@ import {
   createViewWeek,
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
-import '@sx-premium/interactive-event-modal/index.css'
 import {shallowRef} from "vue";
 import {draw} from "./plugins/draw.ts";
 

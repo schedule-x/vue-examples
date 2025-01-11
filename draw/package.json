@@ -13,7 +13,6 @@
     "@schedule-x/theme-default": "^2.13.0",
     "@schedule-x/vue": "^2.12.0",
     "@sx-premium/draw": "^2.3.3",
-    "@sx-premium/interactive-event-modal": "^2.3.3",
     "vue": "^3.5.13"
   },
   "devDependencies": {
