@@ -9,10 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@schedule-x/events-service": "^2.29.0",
-    "@schedule-x/theme-default": "^2.29.0",
-    "@schedule-x/vue": "^2.26.0",
-    "@sx-premium/interactive-event-modal": "^3.15.0",
+    "@schedule-x/events-service": "^3.0.0",
+    "@schedule-x/theme-default": "^3.0.0",
+    "@schedule-x/vue": "^3.0.0",
+    "@sx-premium/interactive-event-modal": "^13.0.0",
+    "temporal-polyfill": "^0.3.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
