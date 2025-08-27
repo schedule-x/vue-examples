@@ -1,6 +1,8 @@
 import {createInputField, createInteractiveEventModal} from "@sx-premium/interactive-event-modal";
 import {eventsService} from "./events-service.ts";
 
+import 'temporal-polyfill/global'
+
 const regionInputField = createInputField({
   label: 'Region',
   type: 'select',

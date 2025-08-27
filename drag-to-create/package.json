@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@schedule-x/events-service": "^2.13.0",
-    "@schedule-x/theme-default": "^2.13.0",
-    "@schedule-x/vue": "^2.12.0",
-    "@sx-premium/drag-to-create": "^2.3.3",
+    "@schedule-x/events-service": "^3.0.0",
+    "@schedule-x/theme-default": "^3.0.0",
+    "@schedule-x/vue": "^3.0.0",
+    "@sx-premium/drag-to-create": "^13.0.0",
+    "temporal-polyfill": "^0.3.0",
+    "uuid": "^11.1.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {

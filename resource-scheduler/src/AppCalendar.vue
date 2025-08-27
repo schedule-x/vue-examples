@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ScheduleXCalendar } from '@schedule-x/vue'
 import {
   createCalendar,
@@ -11,10 +11,12 @@ import {shallowRef} from "vue";
 import {eventsService} from "./plugins/events-service.ts";
 import {eventModal} from "./plugins/modal.ts";
 import {dailyView, hourlyView} from "./plugins/resource-scheduler.ts";
+import 'temporal-polyfill/global'
 
 // Important. Use shallowRef instead of ref, since ref makes all child properties reactive, which causes errors in the calendar.
 const calendarApp = shallowRef(createCalendar({
-  selectedDate: '2025-03-01',
+  selectedDate: Temporal.PlainDate.from('2025-03-01'),
+  timezone: 'Asia/Tokyo',
   views: [
     hourlyView,
     dailyView,
@@ -32,15 +34,15 @@ const calendarApp = shallowRef(createCalendar({
     {
       id: 1,
       title: 'Event 1',
-      start: '2025-03-01 02:00',
-      end: '2025-03-01 05:00',
+      start: Temporal.ZonedDateTime.from('2025-03-01T02:00:00+09:00[Asia/Tokyo]'),
+      end: Temporal.ZonedDateTime.from('2025-03-01T05:00:00+09:00[Asia/Tokyo]'),
       resourceId: '1'
     },
     {
       id: 2,
       title: 'Event 2',
-      start: '2025-03-01 02:00',
-      end: '2025-03-01 04:00',
+      start: Temporal.ZonedDateTime.from('2025-03-01T02:00:00+09:00[Asia/Tokyo]'),
+      end: Temporal.ZonedDateTime.from('2025-03-01T04:00:00+09:00[Asia/Tokyo]'),
       resourceId: '2'
     }
   ],
