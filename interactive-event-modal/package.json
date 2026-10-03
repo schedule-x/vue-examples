@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@schedule-x/calendar": "^4.1.0",
-    "@schedule-x/events-service": "^4.1.0",
-    "@schedule-x/theme-default": "^4.1.0",
-    "@schedule-x/vue": "^4.0.0",
-    "@sx-premium/interactive-event-modal": "^15.1.1",
+    "@schedule-x/calendar": "^4.9.1",
+    "@schedule-x/events-service": "^4.9.1",
+    "@schedule-x/theme-default": "^4.9.1",
+    "@schedule-x/vue": "^4.1.0",
+    "@sx-premium/interactive-event-modal": "15.3.1",
     "temporal-polyfill": "^0.3.0",
     "vue": "^3.5.13"
   },
