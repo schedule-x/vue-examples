@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import AppCalendar from './AppCalendar.vue'
+import ExampleShell from './ExampleShell.vue'
 </script>
 
 <template>
-  <div>
+  <ExampleShell demo="Interactive event modal">
     <AppCalendar />
-  </div>
+  </ExampleShell>
 </template>
-
-<style scoped>
-
-</style>
